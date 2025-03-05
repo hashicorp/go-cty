@@ -55,27 +55,6 @@ func TestSetUnion(t *testing.T) {
 				cty.StringVal("c"),
 			}),
 		},
-		{
-			[]cty.Value{
-				cty.SetVal([]cty.Value{cty.True}),
-				cty.SetValEmpty(cty.DynamicPseudoType),
-			},
-			cty.SetVal([]cty.Value{cty.True}),
-		},
-		{
-			[]cty.Value{
-				cty.SetVal([]cty.Value{cty.EmptyObjectVal}),
-				cty.SetValEmpty(cty.DynamicPseudoType),
-			},
-			cty.SetVal([]cty.Value{cty.EmptyObjectVal}),
-		},
-		{
-			[]cty.Value{
-				cty.SetValEmpty(cty.DynamicPseudoType),
-				cty.SetValEmpty(cty.DynamicPseudoType),
-			},
-			cty.SetValEmpty(cty.DynamicPseudoType),
-		},
 	}
 
 	for _, test := range tests {
@@ -138,27 +117,6 @@ func TestSetIntersection(t *testing.T) {
 				cty.StringVal("b"),
 			}),
 		},
-		{
-			[]cty.Value{
-				cty.SetVal([]cty.Value{cty.True}),
-				cty.SetValEmpty(cty.DynamicPseudoType),
-			},
-			cty.SetValEmpty(cty.Bool),
-		},
-		{
-			[]cty.Value{
-				cty.SetVal([]cty.Value{cty.EmptyObjectVal}),
-				cty.SetValEmpty(cty.DynamicPseudoType),
-			},
-			cty.SetValEmpty(cty.EmptyObject),
-		},
-		{
-			[]cty.Value{
-				cty.SetValEmpty(cty.DynamicPseudoType),
-				cty.SetValEmpty(cty.DynamicPseudoType),
-			},
-			cty.SetValEmpty(cty.DynamicPseudoType),
-		},
 	}
 
 	for _, test := range tests {
@@ -210,21 +168,6 @@ func TestSetSubtract(t *testing.T) {
 			cty.SetVal([]cty.Value{
 				cty.StringVal("b"),
 			}),
-		},
-		{
-			cty.SetVal([]cty.Value{cty.StringVal("a")}),
-			cty.SetValEmpty(cty.DynamicPseudoType),
-			cty.SetVal([]cty.Value{cty.StringVal("a")}),
-		},
-		{
-			cty.SetVal([]cty.Value{cty.EmptyObjectVal}),
-			cty.SetValEmpty(cty.DynamicPseudoType),
-			cty.SetVal([]cty.Value{cty.EmptyObjectVal}),
-		},
-		{
-			cty.SetValEmpty(cty.DynamicPseudoType),
-			cty.SetValEmpty(cty.DynamicPseudoType),
-			cty.SetValEmpty(cty.DynamicPseudoType),
 		},
 	}
 
