@@ -1,4 +1,4 @@
-# 1.6.0 (August 30, 2020)
+# 1.6.0 (Unreleased)
 
 * Fixed various defects in the handling of sets containing unknown values. This will cause unknown values to now be returned in more situations, whereas before `cty` would often return incorrect results when working with sets containing unknown values. The list of defects fixed in this release includes:
     - `cty`: The length of a set containing unknown values, as defined by `Value.Length`, is itself unknown, reflecting the fact that unknown values may be placeholders for values that are equal to other values in the set, which would thus coalesce into a single value.
