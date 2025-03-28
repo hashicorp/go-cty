@@ -1,13 +1,13 @@
-# 1.8.0 (February 22, 2020)
+# 1.8.0 (Unreleased)
 
 * `cty`: When running on Go 1.16 or later, the `cty.String` type will now normalize incoming string values using the Unicode 13 normalization rules.
 * `function/stdlib`: The various string functions which split strings into individual characters as part of their work will now use the Unicode 13 version of the text segmentation algorithm to do so.
 
-# 1.7.2 (February 22, 2020)
+# 1.7.2 (Unreleased)
 
 * `cty`: The `Type.GoString` implementation for object types with optional attributes was previously producing incorrect results due to an implementation bug. ([#86](https://github.com/zclconf/go-cty/pull/86))
 
-# 1.7.1 (December 15, 2020)
+# 1.7.1 (Unreleased)
 
 * `cty`: The `Value.Multiply` and `Value.Modulo` functions now correctly propagate the floating point precision of the arguments, which avoids generating incorrect results for large integer operands. ([#75](https://github.com/zclconf/go-cty/pull/75))
 * `convert`: The `convert.MismatchMessage` function will now correctly identify mismatching attributes in objects, rather than misreporting attributes that are actually present and correct. ([#78](https://github.com/zclconf/go-cty/pull/78))
