@@ -1,0 +1,10 @@
+---
+schema: 1.1
+
+partition: tf-ecosystem
+
+summary:
+  owner: team-tf-core-plugins
+  description: |
+    Fork of upstream zclconf/go-cty for use in the terraform-plugin-sdk
+  visibility: public
