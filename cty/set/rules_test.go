@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2017, 2025
+// SPDX-License-Identifier: MIT
+
 package set
 
 // testRules is a rules implementation that is used for testing. It only

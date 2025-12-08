@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2017, 2025
+// SPDX-License-Identifier: MIT
+
 // Package json provides functions for serializing cty types and values in
 // JSON format, and for decoding them again.
 //

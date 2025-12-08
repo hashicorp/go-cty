@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2017, 2025
+// SPDX-License-Identifier: MIT
+
 package cty
 
 // NullVal returns a null value of the given type. A null can be created of any

@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2017, 2025
+// SPDX-License-Identifier: MIT
+
 // Package msgpack provides functions for serializing cty values in the
 // msgpack encoding, and decoding them again.
 //

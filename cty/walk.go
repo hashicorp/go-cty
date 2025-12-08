@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2017, 2025
+// SPDX-License-Identifier: MIT
+
 package cty
 
 // Walk visits all of the values in a possibly-complex structure, calling

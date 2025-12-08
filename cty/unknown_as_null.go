@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2017, 2025
+// SPDX-License-Identifier: MIT
+
 package cty
 
 // UnknownAsNull returns a value of the same type as the given value but

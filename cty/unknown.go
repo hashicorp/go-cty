@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2017, 2025
+// SPDX-License-Identifier: MIT
+
 package cty
 
 // unknownType is the placeholder type used for the sigil value representing

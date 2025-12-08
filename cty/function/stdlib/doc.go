@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2017, 2025
+// SPDX-License-Identifier: MIT
+
 // Package stdlib is a collection of cty functions that are expected to be
 // generally useful, and are thus factored out into this shared library in
 // the hope that cty-using applications will have consistent behavior when
