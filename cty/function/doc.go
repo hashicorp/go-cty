@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2017, 2025
+// SPDX-License-Identifier: MIT
+
 // Package function builds on the functionality of cty by modeling functions
 // that operate on cty Values.
 //

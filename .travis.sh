@@ -1,4 +1,7 @@
 #!/bin/bash
+# Copyright IBM Corp. 2017, 2025
+# SPDX-License-Identifier: MIT
+
 
 set -e
 echo "" > coverage.txt

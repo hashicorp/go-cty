@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2017, 2025
+// SPDX-License-Identifier: MIT
+
 // Package convert contains some routines for converting between cty types.
 // The intent of providing this package is to encourage applications using
 // cty to have consistent type conversion behavior for maximal interoperability

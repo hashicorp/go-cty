@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2017, 2025
+// SPDX-License-Identifier: MIT
+
 // Package gocty deals with converting between cty Values and native go
 // values.
 //
