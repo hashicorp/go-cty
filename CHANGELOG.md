@@ -1,3 +1,16 @@
+# 1.8.2 (April 20, 2021)
+
+* `cty`: `Value.Mark` will no longer incorrectly create nested markings when applied to a value that is already marked. Instead, it will unpack the reciever and use its underlying value directly, merging all of the marks into a new mark set. ([#96](https://github.com/zclconf/go-cty/pull/96))
+* `cty:` `Value.RawEquals` will no longer panic if asked to compare two maps where at least one of them is marked. ([#96](https://github.com/zclconf/go-cty/pull/96))
+* `function/stdlib`: Improvements to `ChunklistFunc`, `ConcatFunc`, `FlattenFunc`, `KeysFunc`, `LengthFunc`, `LookupFunc`, `MergeFunc`, `SetproductFunc`, `ValuesFunc`, and `ZipmapFunc` to handle marked values more precisely (individual element vs. whole-collection marks). ([#94](https://github.com/zclconf/go-cty/pull/94), [#95](https://github.com/zclconf/go-cty/pull/95), [#96](https://github.com/zclconf/go-cty/pull/96), [#97](https://github.com/zclconf/go-cty/pull/97), [#98](https://github.com/zclconf/go-cty/pull/98), [#99](https://github.com/zclconf/go-cty/pull/99), [#100](https://github.com/zclconf/go-cty/pull/100))
+
+# 1.8.1 (Unreleased)
+
+* `convert`: Fix for panics and some general misbehavior when converting null values to type constraints containing objects with optional attributes. ([#88](https://github.com/zclconf/go-cty/pull/88))
+* `convert`: Type unification of a mixture of list and tuple types and for a mixture of map and object types will now do the same recursive unification that we previously did for unification of just list types and just map types respectively, to avoid producing a very different and confusing result in situations where callers try to construct collections from a mixture of nested collections and nested structural types. ([#89](https://github.com/zclconf/go-cty/pull/89))
+* `convert`: Conversion will no longer panic if we can't find a suitable single element type to use when converting to a collection type with a dynamically-selected element type. ([#91](https://github.com/zclconf/go-cty/pull/91))
+* `function`: The `ReturnTypeForValues` and `Call` methods on `Function` will now protect functions from having to deal with nested marked values for arguments that don't specifically declare `AllowMarks: true`, as a concession for the fact that many functions were written prior to the introduction of marks as a concept. ([#92](https://github.com/zclconf/go-cty/pull/92))
+
 # 1.8.0 (Unreleased)
 
 * `cty`: When running on Go 1.16 or later, the `cty.String` type will now normalize incoming string values using the Unicode 13 normalization rules.
